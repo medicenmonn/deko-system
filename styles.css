@@ -1,0 +1,624 @@
+:root {
+    --bitcoin-orange: #ff9008;
+    --soft-orange: #ffe9d5;
+    --secondary-blue: #1d95eb;
+    --soft-blue: #c9e4f8;
+    --warm-black: #282623;
+    --black: #000000;
+    --grey: #9e9e9e;
+    --off-white: #faf8f7;
+    --just-white: #fff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'DM Sans', sans-serif;
+}
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: auto;
+    min-width: 340px;
+    height: 334px;
+    text-align: center;
+    background: #144b72;
+}
+
+header img {
+    width: 130px;
+    height: 65px;
+    margin-top: 60px;
+    align-self: center;
+}
+
+.header-title-container {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: 218px;
+    margin-top: 40px;
+    text-align: center;
+    align-self: center;
+}
+
+.header-title-container h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+
+.header-title-container p {
+    margin-top: 25px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--soft-orange);
+}
+.header-title-container .header-button {
+    position: absolute;
+    left: calc(50% - 123px);
+    top: 270px;
+    display: block;
+    margin-top: 35px;
+    padding: 15px;
+    width: 229px;
+    height: 30px;
+    background-color: var(--off-white);
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--black);
+}
+.header-button span {
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 10px;
+    background-image: url(./assets/icons/down-arrow.svg);
+}
+
+
+
+main {
+    width: 100%;
+    min-width: 340px;
+    height: auto;
+    background-color: var(--off-white);
+}
+
+.main-exchange-container {
+    width: 100%;
+    height: auto;
+    padding-top: 65px;
+    text-align: center;
+}
+.main-exchange-container--title {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.main-exchange-container .background-img {
+    width: 100%;
+    min-width: 340px;
+    height: 70vh;
+    background-image: url('./assets/img/deko.jpg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.main-exchange-container h2 {
+    margin-bottom: 30px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+.main-exchange-container p {
+    margin-bottom: 25px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: var(--just-white);
+}
+
+.main-currency-table {
+    width: 70%;
+    min-width: 235px;
+    max-width: 500px;
+    height: 360px;
+    margin: 0 auto;
+    font-family:"Inter", sans-serif;
+}
+.main-exchange-container .currency-table--title {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+    color: var(--bitcoin-orange);
+}
+.currency-table--container {
+    width: 90%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 0 auto;
+}
+.currency-table--container table {
+    width: 100%;
+    height: 100%;
+}
+.currency-table--container td {
+    width: 50%;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+    color: var(--grey);
+    background-color: var(--just-white);
+}
+.currency-table--container .table__top-left {
+    border-radius: 15px 0 0 0;
+}
+.currency-table--container .table__top-right {
+    border-radius: 0 15 0 0;
+}
+.currency-table--container  .table__bottom-left {
+    border-radius: 0 0 0 15px;
+}
+.currency-table--container .table__bottom-right {
+    border-radius: 0 0 15px 0;
+}
+.currency-table--container .table__right {
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 1.7rem;
+    color: #757575;
+}
+.currency-table--container .down {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    background-image: url("./assets/icons/trending-down.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.currency-table--container .up {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    background-image: url("./assets/icons/trending-up.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.currency-table--date {
+    width: 190px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 12px;
+    padding: 8px;
+    background-color: var(--soft-orange);
+    border-radius: 8px;
+}
+.currency-table--date p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--warm-black);
+    font-weight: 300;
+}
+.secondary-table {
+    width: 70%;
+    min-width: 235px;
+    max-width: 500px;
+    height: 360px;
+    margin: 0 auto;
+    font-family:"Inter", sans-serif;
+}
+.main-exchange-container .secondary-table--title {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+    color: var(--secondary-blue);
+}
+.secondary-table--container {
+    width: 90%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 0 auto;
+}
+.secondary-table--container table {
+    width: 100%;
+    height: 100%;
+}
+.secondary-table--container td {
+    width: 50%;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+    color: var(--grey);
+    background-color: var(--just-white);
+}
+.secondary-table--container .table__top-left {
+    border-radius: 15px 0 0 0;
+}
+.secondary-table--container .table__top-right {
+    border-radius: 0 15 0 0;
+}
+.secodary-table--container  .table__bottom-left {
+    border-radius: 0 0 0 15px;
+}
+.secondary-table--container .table__bottom-right {
+    border-radius: 0 0 15px 0;
+}
+.secondary-table--container .table__right {
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 1.7rem;
+    color: #757575;
+}
+.secondary-table--date {
+    width: 190px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: 12px;
+    padding: 8px;
+    background-color: var(--soft-blue);
+    border-radius: 8px;
+}
+.secondary-table--date p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--warm-black);
+    font-weight: 300;
+}
+
+.main-product-detail {
+    padding-bottom: 250px;
+    position: relative;
+    width: auto;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 10px;
+    background-color: #144b72;
+    text-decoration: none;
+}
+.contacto {
+    display: flex;
+    justify-content: center;
+    font-size: 1.8rem;
+    color: #144b72;
+    margin: 20px;
+}
+.contacto a  {
+    text-decoration: none;
+    cursor: pointer;
+}
+.contacto a :hover {
+    transform: scale(1.1);
+}
+.contacto-img {
+    background-image: url('./assets/icons/contacto.svg');
+    width: 45px;
+    height: 45px;
+    margin: 20px;
+} 
+.product-detail--title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+    color: var(--off-white);
+}
+.product-detail--title h2 {
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+.product-detail--title p {
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--just-white);
+}
+.product-detail--card {
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 150px;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: var(--warm-black);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+}
+.product-detail--card .clock {
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    background-image: url('./assets/icons/clock.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.product-detail--card .eye {
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    background-image: url('./assets/icons/eye.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.product-detail--card .dollar {
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    background-image: url('./assets/icons/dollar-sign.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.product-detail--card .checklist {
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    background-image: url('./assets/icons/check-circle.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.product--card-title  {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--just-white);
+} 
+.product--card-body {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #808080;
+}
+.bitcoin-img-container {
+    width: 100%;
+    min-width: 340px;
+    height: 70vh;
+    background-image: url('./assets/img/deko-catalogo.jpg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.bitcoin-img-container h2 {
+    padding-top: 60px;
+    font-size:2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+.main-plans-container {
+    width: 100%;
+    min-width: 340px;
+    padding-bottom: 70px;
+    text-align: center;
+    
+}
+.plans--title {
+    width: auto;
+    min-width: 288px;
+    height: auto;
+    margin-bottom: 30px;
+}
+.plans--title h2 {
+    padding-top: 50px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+.plans--title p {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 1.2rem;
+    color: #757575;
+}
+
+.plans-container--card  {
+    position: relative;
+    scroll-snap-align: center;
+    width: 70%;
+    min-width: 180px;
+    max-width: 300px;
+    height: 300px;
+    margin: 50px 23px 0;
+    padding: 0 15px;
+    background-color: var(--black);
+    border-radius: 15px;
+    box-shadow: 0 9px 55px rgba(89, 73, 30, 0.16);
+}
+
+
+#uno  {
+    background-image: url('./assets/img/deko-enrrollables.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#dos {
+    background-image: url('./assets/img/deko-horizontales.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#tres {
+    background-image: url('./assets/img/deko-persianas-verticales-.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#cuatro {
+    background-image: url('./assets/img/deko-plisadas.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#cinco  {
+    background-image: url('./assets/img/deko-mosquitero.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#seis {
+    background-image: url('./assets/img/deko-domos.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#siete {
+    background-image: url('./assets/img/deko-double.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#ocho {
+    background-image: url('./assets/img/deko-huracan.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#nueve {
+    background-image: url('./assets/img/deko-outdoor.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#diez {
+    background-image: url('./assets/img/deko-motorizado.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.recomendado {
+    position: absolute;
+    width: 120px;
+    height: 30px;
+    top: -40px;
+    left: calc(45% - 55px);
+    background-color: #45657c;
+    border-radius: 8px;
+    color: var(--just-white);
+    font-size: 1.2rem;
+    padding: 6px;
+}
+.plan-card--title {
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500px;
+    line-height: 1.8rem;
+    color: black;
+}
+.plan-card--price {
+    padding: 3px 0;
+    font-size: 5.2rem;
+    font-weight: bold;
+    line-height: 3.3rem;
+    color: black;
+    margin: 0 auto;
+}
+.plan-card--price span {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin: 0 auto;
+}
+.plan-card--saving {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-top: 165px;
+}
+.plan-card--cta {
+    width: 100px;
+    height: 35px;
+    margin-top: 132px;
+    background-color: var(--just-white);
+    border-radius: 4px;
+    border: 2px solid transparent;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.6rem;
+    color: var(--black);
+    font-family: "DM Sans", sans-serif;
+    text-decoration: none;
+}
+
+
+.plan-card--cta span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(./assets/icons/orange-right-arrow.svg);
+    vertical-align: text-bottom;
+    cursor: pointer;
+}
+.plans-container--slider {
+    display: flex;
+    height: 380px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+}
+footer {
+    display: flex;
+    margin-top: 100px;
+    width: 100%;
+    min-width: 340px;
+    height: 150px;
+    background-color: #144b72;
+}
+footer .right img {
+    width: 100px;
+    height: 60px;
+}
+footer section {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer .left ul {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+}
+footer .left li {
+    margin: 10px 0;
+}
+footer .left a {
+    text-decoration: none;
+    color: var(--just-white);
+    cursor: pointer;
+}
+
+
+
