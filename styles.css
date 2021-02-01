@@ -323,6 +323,19 @@ main {
     height: 45px;
     margin: 20px;
 } 
+.ig-img {
+    background-image: url('./assets/icons/002-instagram.svg');
+    background-size: contain;
+    width: 45px;
+    height: 45px;
+    margin: 20px;
+} 
+.fb-img {
+    background-image: url('./assets/icons/001-facebook.svg');
+    width: 45px;
+    height: 45px;
+    margin: 20px;
+} 
 .product-detail--title {
     width: 90%;
     min-width: 288px;
