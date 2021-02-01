@@ -627,6 +627,13 @@ footer .left ul {
 footer .left li {
     margin: 10px 0;
 }
+footer .left .email {
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+    color:var(--just-white);
+}
 footer .left a {
     text-decoration: none;
     color: var(--just-white);
